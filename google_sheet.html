@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website tracker</title>
+
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/78RWc6y25eM73Qah/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<form id="myForm">
+		<label>Date:</label>
+		<input type="text" name="date" placeholder="MM/DD" size="6"/>
+		<label>Time:</label>
+		<input type="text" name="time" placeholder="00:00" size="6"/>
+		</br>
+		<label>Schoology</label>
+		<input type="checkbox" name="schoology"/>
+		<br/>
+		<label>Gmail</label>
+		<input type="checkbox" name="gmail"/>
+		<br/>
+		<label>Google calendar</label>
+		<input type="checkbox" name="calendar"/>
+		<br/>
+		<label>Google docs</label>
+		<input type="checkbox" name="docs"/>
+		<br/>
+		<label>Google drive</label>
+		<input type="checkbox" name="drive"/>
+		<br/>
+		<label>Google slides</label>
+		<input type="checkbox" name="slides"/>
+		<br/>
+		<label>Google sheets</label>
+		<input type="checkbox" name="sheets"/>
+		<br/>
+		<label>Other websites you will be using:</label>
+		</br>
+		<textarea name="other_web" rows="4" cols="50"></textarea>
+		<br/>
+	</form>
+
+	<h2> </h2>
+	<button onclick='SubForm()'>Submit</button>
+
+	<a href="https://docs.google.com/spreadsheets/d/1eogBtL9rNeBF8UUqsKp-t-PPbPcpBm1u0E-FSdMUeKo/edit#gid=0" id="activitylog" target="_blank">
+    	<button>View activity log</button>
+	</a>
+
+</body>
+</html>
