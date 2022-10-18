@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Website tracker</title>
-
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -27,32 +25,44 @@
 
 <body>
 	<form id="myForm">
-		<label>Date:</label>
-		<input type="text" name="date" placeholder="MM/DD" size="6"/>
-		<label>Time:</label>
-		<input type="text" name="time" placeholder="00:00" size="6"/>
-		</br>
+		<label>Your name:</label>
+		<br/>
+		<textarea name="stu_name" rows="1" cols="20"></textarea>
+		<br/>
+
+		<label>Current date and time:</label>
+		<br/>
+		<textarea name="time" rows="1" cols="20" placeholder="i.e. 00:00 MM/DD"></textarea>
+		<br/>
+
 		<label>Schoology</label>
-		<input type="checkbox" name="schoology"/>
+		<input type="checkbox" name="schoology" value="yes"/>
 		<br/>
+
 		<label>Gmail</label>
-		<input type="checkbox" name="gmail"/>
+		<input type="checkbox" name="gmail" value="yes"/>
 		<br/>
+
 		<label>Google calendar</label>
-		<input type="checkbox" name="calendar"/>
+		<input type="checkbox" name="calendar" value="yes"/>
 		<br/>
+
 		<label>Google docs</label>
-		<input type="checkbox" name="docs"/>
+		<input type="checkbox" name="docs" value="yes"/>
 		<br/>
+
 		<label>Google drive</label>
-		<input type="checkbox" name="drive"/>
+		<input type="checkbox" name="drive" value="yes"/>
 		<br/>
+
 		<label>Google slides</label>
-		<input type="checkbox" name="slides"/>
+		<input type="checkbox" name="slides" value="yes"/>
 		<br/>
+
 		<label>Google sheets</label>
-		<input type="checkbox" name="sheets"/>
+		<input type="checkbox" name="sheets" value="yes"/>
 		<br/>
+
 		<label>Other websites you will be using:</label>
 		</br>
 		<textarea name="other_web" rows="4" cols="50"></textarea>
