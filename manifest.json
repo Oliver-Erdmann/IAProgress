@@ -1,0 +1,11 @@
+{
+    "name": "Website Tracker",
+    "version": "1.0.0",
+    "description": "Track your student's website usage",
+    "manifest_version": 3,
+    "author": "Oliver Erdmann",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Website Tracker"
+    }
+}
